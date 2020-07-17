@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 9th assignment</title>
+</head>
+<body>
+    <script>
+        let ans=window.prompt("Write Marks :");
+        //using conditional operator.
+        /* if(ans>80)
+         {
+             console.log("Marks are " + ans + "and grade is A");
+         } else if(ans>60){
+             console.log("Marks are " + ans + "and grade is B");
+         }else if(ans>35){
+             console.log("Marks are " + ans + "and grade is C");
+         }else{
+             console.log("Marks are " + ans + "and grade is Fail");
+         }*/
+
+        // By using switch case.
+        /*switch(ans)
+        {
+            case 90: 
+                console.log("Marks are " + ans + " and grade is A");
+                break;
+            case 89:
+            case 60: 
+                console.log("Marks are " + ans + " and grade is B");
+                break;
+            case 59:
+            case 35: 
+                console.log("Marks are " + ans + " and grade is C");
+                break;
+            default : 
+                console.log("Marks are " + ans + " and grade is Fail");
+                break;
+        }*/
+
+        //by using ternary oparator
+
+        let res=ans >90 ? 'A' : ans>60 ? 'B': ans>35 ? 'c':'Fail';
+        console.log("Marks are " + ans + " and grade is  " + res);
+
+
+    </script>
+</body>
+</html>    
