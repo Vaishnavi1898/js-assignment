@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 18th assignment</title>
+</head>
+<body>
+    <script>
+        var inputArray = [];
+        var size = 10; 
+
+            for(var i=0; i<size; i++) {
+                
+            
+                inputArray[i] = prompt('Enter Element ' + (i+1));
+            }
+            let odd =inputArray.filter((el=>el%2!=0));
+            console.log(odd);
+         let cube = odd.map(function(el){
+             return el**3;
+         })   
+         console.log(cube);
+
+    </script>
+</body>
+</html>    
