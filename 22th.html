@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 22th assignment</title>
+
+    <style>
+        body{
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+        .dark-mode{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="name">
+        <p>Welcome</p>
+    </div>
+    <div id="clock"></div>
+    <button onclick="myFunction()">Dark Mode</button>
+    <script>
+      let name =prompt("What is your name:");
+      document.getElementById("name").innerHTML +=name;
+
+      const ctime =document.getElementById("clock");
+      function time(){
+          let data =new Date();
+          let time =date.toLocaleTimeString();
+          ctime.innerHTML =time;
+      }
+      setInterval(time,1000);
+
+      function myFunction(){
+          var element =document.body;
+          element.classList.toggle("dark-mode");
+      }
+    </script>
+</body>
+</html>    
