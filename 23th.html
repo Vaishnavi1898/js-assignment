@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>23th Assignment-2</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Var:</h1><br>
+        <p>
+        <pre>
+             JavaScript variables statement is used to declare a variable and we can initialize the value
+            of that variable.
+
+            Example: var a =10;
+
+            Variable declarations are processed before the execution of the code.
+            
+            The scope of a JavaScript variable declared outside the function is global and declared inside
+            function is local variable.
+            
+            Variable with same name can be declared more than once
+            </pre>
+        </p>
+    </div>
+
+    <div>
+        <h1>Let:</h1><br>
+        <p>
+        <pre>
+            let statement declares a local variable in a block scope. It is similar to var,we can optionally initialize the variable.
+
+            Example: let a =10;
+            
+            It allows you to create a variable with the scope limited to the block on which it is used.
+
+            Variable with same name cannot be declared more than once.
+
+
+            
+       </pre>
+        </p>
+    </div>
+
+    <div>
+        <h1>Const:</h1>
+        <p>
+            <pre>
+                const values can be assigned once and they cannot be reassigned. 
+                
+                The scope of const statement works similar to let statements.
+
+                Example: const a =10;
+            </pre>
+        </p>
+    </div>
+
+
+    <script>
+        var a = 10;
+        console.log(a);
+        //This will not throw any error
+        var a =20;
+
+        let b = 10;
+        console.log(b);
+        //This below statement throws an error
+        let b = 39;
+
+        const c = 10;
+        console.log(c);
+        c = 25;   //This throws an error
+
+    </script>
+</body>
+
+</html>
